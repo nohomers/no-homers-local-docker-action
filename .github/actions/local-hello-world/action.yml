@@ -1,5 +1,7 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
+env:
+  address: '742 Evergreen Terrace'
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
