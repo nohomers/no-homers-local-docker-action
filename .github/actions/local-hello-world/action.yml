@@ -1,7 +1,5 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
-env:
-  home_address: '742 Evergreen Terrace'
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
@@ -15,3 +13,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+  env:
+    home_address: '742 Evergreen Terrace'
