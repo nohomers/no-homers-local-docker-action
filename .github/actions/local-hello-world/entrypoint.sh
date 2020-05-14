@@ -14,3 +14,5 @@ if echo $name | grep -i "^homer" > /dev/null ; then
 else
   echo "Hello $name"
 fi
+
+echo "::warning file=entrypoint.sh,line=4,col=1::Setting the time could be dangerous!"
